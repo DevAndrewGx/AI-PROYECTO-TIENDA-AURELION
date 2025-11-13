@@ -8,13 +8,16 @@ Administrar y organizar a los clientes, productos y ventas de la Tienda Aurelion
 
 Actualmente, la Tienda Aurelion registra sus datos en archivos de Excel, donde se observa que en varias 
 hojas se repiten las mismas columnas. Esto provoca duplicidad de información, dificultades en la búsqueda 
-de datos y un mayor riesgo de errores en los registros.
+de datos y un mayor riesgo de errores en los registros. - ARQUITECTURA
 
 # Solución
 
 Implementar una base de datos relacional que organice la información en diferentes tablas normalizadas,
 evitando columnas duplicadas. De esta manera, se garantiza que la información sea más accesible, 
 consistente y fácil de consultar.
+
+- Crear una arquitectura que posibilite al dueño de la tienda a tomar mejores decisiones, mejores visualizaciones 
+
 
 
 # Equipo
@@ -184,3 +187,129 @@ consistente y fácil de consultar.
 13. Cual es el barrio o ciudad que tiene mas ventas ?
 14. ¿Cuál es el ingreso total generado por el negocio?
 15. ¿Cómo ha sido la tendencia de ingresos mensuales?
+
+---
+
+# Estadisticas basicas calculadas 
+
+<!-- ### Dataset: clientes
+- Total de registros: 100
+- Valores nulos: 0
+
+### Dataset: productos
+- Total de registros: 100
+- Precio unitario promedio: 2718.55 
+- 
+
+### Dataset: ventas 
+- Total de registros: 120
+- Valores nulos: 0  -->
+## Estadisticas basicas acerca del precio del producto.
+![alt text](image.png)
+![alt text](image-1.png)
+
+## Estadisticas basicas de las ventas totales (Importe).
+
+![alt text](image-2.png)
+
+<!-- ## Dataset detalles_ventas: 
+- Total de registros: 343
+- Valores nulos: 0  -->
+
+# Identificación del tipo de distribución de variables
+
+## Distribución de los precios de los productos mediante diagrama de caja y histograma
+![alt text](image-4.png)
+![alt text](image-5.png)
+
+- Análisis del histograma:
+  - El eje  x  representa el precio en pesos argentinos, mientras que el eje  y  muestra la frecuencia de productos en los distintos niveles de precio. Se observa una ligera asimetría positiva (sesgo hacia la derecha), lo que indica que existen algunos productos con precios relativamente altos.
+
+  - Análisis del gráfico de caja y bigote:
+    Se observa que el 50% de los productos su precio está entre 1590 y 4026.5 pesos argentinos. No se observan valores atípicos.
+
+
+## Distribución de las ventas totales (Importe) mediante diagrama de caja e histograma, respectivamente.
+![alt text](image-6.png)
+![alt text](image-7.png)
+- Análisis del histograma:
+El eje  x  representa las ventas totales en pesos argentinos, mientras que el eje  y  muestra la frecuencia de ventas de diferentes productos en distintos rangos de importe. Se observa que la distribución del importe presenta una asimetría positiva (sesgo hacia la derecha), lo que indica que la mayoría de las ventas totales corresponden a montos relativamente bajos, mientras que las ventas de montos muy altos son menos frecuentes.
+Análisis del gráfico de caja y bigote:
+50%  de las ventas totales se concentró en el amplio rango de aproximadamente 3489 y 10232 pesos argentinos. Además, hay valores atípicos a la derecha, por encima de 20345 pesos, lo que confirma la presencia de ventas totales muy altas.
+
+# Análisis de correlaciones entre variables principales 
+
+![alt text](image-3.png)
+- Análisis.
+  - Precio unitario tiene correlación negativa con la cantidad.
+
+  - Precio unitario tiene correlación alta con el importe.
+
+  - Cantidad tiene correlación alta con el importe.
+
+
+# Detección de outliers
+
+![alt text](image-6.png)
+![alt text](image-7.png)
+
+![alt text](image-8.png)
+
+Se ignoraron los datos atípicos con la finalidad de evitar que los valores extremos afecten el cálculo de la media.
+
+![alt text](image-9.png)
+![alt text](image-10.png)
+
+![alt text](image-11.png)
+![alt text](image-12.png)
+
+Análisis del histograma:
+
+- El eje  x  representa las ventas totales en pesos argentinos, mientras que el eje  y  muestra la frecuencia de ventas de diferentes productos en distintos rangos de importe. Se observa que la distribución del importe presenta una asimetría positiva (sesgo hacia la derecha), lo que indica que la mayoría de las ventas totales corresponden a montos relativamente bajos, mientras que las ventas de montos muy altos son menos frecuentes.
+Análisis del gráfico de caja y bigote:
+50%  de las ventas totales se concentró en el amplio rango de 3446 y 10048 pesos argentinos.
+
+# 3 Graficos representativos 
+
+## Grafico 1 
+
+### ¿Cómo ha sido la tendencia de ingresos mensuales?
+
+![alt text](image-13.png)
+
+## Grafico 2 
+
+### ¿Cómo ha sido la tendencia de la cantidad vendida mensualmente?
+
+![alt text](image-14.png)
+
+
+## Grafico 3
+### ¿Cómo ha sido la tendencia de la compra media por cliente mensualmente?
+![alt text](image-15.png)
+
+
+## Ineterpretación de resultados orientada al problema
+
+
+### Análisis de la tendencia mensual de la cantidad vendida y los ingresos (importe)
+Primer trimestre (enero–marzo): 
+
+  - Se observa una tendencia de descenso constante tanto en la cantidad vendida como en los ingresos generados.
+
+  - Abril fue el mes con peor desempeño, registrando los niveles más bajos de ventas e ingresos.
+
+  - Mayo alcanzó el pico máximo de ingresos, aunque se ubicó en el segundo lugar en cantidad vendida.
+
+  - Enero se posicionó como el segundo mes con mayores ingresos y el primero en cantidad vendida, mostrando un buen inicio de año.
+
+  - En junio se registró un leve descenso respecto al pico de mayo; aun así, se ubicó como el tercer mes con mayores ingresos y cantidad vendida.
+
+
+### Análisis de la tendencia mensual de la compra media por cliente
+
+- El mes de marzo (19358.58 ARS) registró el menor gasto promedio por cliente, lo que coincide con una reducción progresiva en las ventas y pedido. Esto indica un periodo de baja actividad comercial.
+
+- En mayo, el gasto promedio por cliente alcanzó su máximo valor (30359.82 ARS). Aunque no fue el mes con mayor cantidad vendida, este resultado sugiere que los clientes realizaron compras de mayor valor unitario, elevando así el ingreso total.
+
+- En junio, el gasto promedio por cliente fue de 26133.17 ARS, manteniéndose en un nivel alto respecto a los meses anteriores, aunque con una ligera disminución respecto a mayo.
