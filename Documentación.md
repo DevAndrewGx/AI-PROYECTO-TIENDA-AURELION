@@ -8,15 +8,13 @@ Administrar y organizar a los clientes, productos y ventas de la Tienda Aurelion
 
 Actualmente, la Tienda Aurelion registra sus datos en archivos de Excel, donde se observa que en varias 
 hojas se repiten las mismas columnas. Esto provoca duplicidad de información, dificultades en la búsqueda 
-de datos y un mayor riesgo de errores en los registros. - ARQUITECTURA
+de datos y un mayor riesgo de errores en los registros. - 
 
 # Solución
 
-Implementar una base de datos relacional que organice la información en diferentes tablas normalizadas,
-evitando columnas duplicadas. De esta manera, se garantiza que la información sea más accesible, 
-consistente y fácil de consultar.
+Organizar y estandarizar toda la información de la tienda en una estructura más clara y coherente en una base de datos relacional, evitando duplicaciones y permitiendo analizar los datos de forma precisa. Esto facilita la generación de reportes, la identificación de patrones y la obtención de métricas útiles, lo que le permitirá al dueño tomar decisiones más rápidas, informadas y basadas en evidencia.
 
-- Crear una arquitectura que posibilite al dueño de la tienda a tomar mejores decisiones, mejores visualizaciones 
+<!-- - Crear una arquitectura que posibilite al dueño de la tienda a tomar mejores decisiones, mejores visualizaciones  -->
 
 
 
@@ -24,6 +22,9 @@ consistente y fácil de consultar.
 - nombre de equipo
     - Grupo 4 - Deep learning Team
 - cantidad de integrantes 
+    - Marcio Mallqui
+    - Andrey Gomez
+    - Karen Martin
     - 8
 
 ---
@@ -205,12 +206,12 @@ consistente y fácil de consultar.
 - Total de registros: 120
 - Valores nulos: 0  -->
 ## Estadisticas basicas acerca del precio del producto.
-![alt text](image.png)
-![alt text](image-1.png)
+![alt text](./Images/image.png)
+![alt text](./Images/image-1.png)
 
 ## Estadisticas basicas de las ventas totales (Importe).
 
-![alt text](image-2.png)
+![alt text](./Images/image-2.png)
 
 <!-- ## Dataset detalles_ventas: 
 - Total de registros: 343
@@ -219,8 +220,8 @@ consistente y fácil de consultar.
 # Identificación del tipo de distribución de variables
 
 ## Distribución de los precios de los productos mediante diagrama de caja y histograma
-![alt text](image-4.png)
-![alt text](image-5.png)
+![alt text](./Images/image-4.png)
+![alt text](./Images/image-5.png)
 
 - Análisis del histograma:
   - El eje  x  representa el precio en pesos argentinos, mientras que el eje  y  muestra la frecuencia de productos en los distintos niveles de precio. Se observa una ligera asimetría positiva (sesgo hacia la derecha), lo que indica que existen algunos productos con precios relativamente altos.
@@ -230,8 +231,8 @@ consistente y fácil de consultar.
 
 
 ## Distribución de las ventas totales (Importe) mediante diagrama de caja e histograma, respectivamente.
-![alt text](image-6.png)
-![alt text](image-7.png)
+![alt text](./Images/image-6.png)
+![alt text](./Images/image-7.png)
 - Análisis del histograma:
 El eje  x  representa las ventas totales en pesos argentinos, mientras que el eje  y  muestra la frecuencia de ventas de diferentes productos en distintos rangos de importe. Se observa que la distribución del importe presenta una asimetría positiva (sesgo hacia la derecha), lo que indica que la mayoría de las ventas totales corresponden a montos relativamente bajos, mientras que las ventas de montos muy altos son menos frecuentes.
 Análisis del gráfico de caja y bigote:
@@ -239,7 +240,7 @@ Análisis del gráfico de caja y bigote:
 
 # Análisis de correlaciones entre variables principales 
 
-![alt text](image-3.png)
+![alt text](./Images/image-3.png)
 - Análisis.
   - Precio unitario tiene correlación negativa con la cantidad.
 
@@ -250,18 +251,18 @@ Análisis del gráfico de caja y bigote:
 
 # Detección de outliers
 
-![alt text](image-6.png)
-![alt text](image-7.png)
+![alt text](./Images/image-6.png)
+![alt text](./Images/image-7.png)
 
-![alt text](image-8.png)
+![alt text](./Images/image-8.png)
 
 Se ignoraron los datos atípicos con la finalidad de evitar que los valores extremos afecten el cálculo de la media.
 
-![alt text](image-9.png)
-![alt text](image-10.png)
+![alt text](./Images/image-9.png)
+![alt text](./Images/image-10.png)
 
-![alt text](image-11.png)
-![alt text](image-12.png)
+![alt text](./Images/image-11.png)
+![alt text](./Images/image-12.png)
 
 Análisis del histograma:
 
@@ -275,24 +276,27 @@ Análisis del gráfico de caja y bigote:
 
 ### ¿Cómo ha sido la tendencia de ingresos mensuales?
 
-![alt text](image-13.png)
+![alt text](./Images/image-13.png)
 
 ## Grafico 2 
 
 ### ¿Cómo ha sido la tendencia de la cantidad vendida mensualmente?
 
-![alt text](image-14.png)
+![alt text](./Images/image-14.png)
 
 
 ## Grafico 3
 ### ¿Cómo ha sido la tendencia de la compra media por cliente mensualmente?
-![alt text](image-15.png)
+![alt text](./Images/image-15.png)
 
 
 ## Ineterpretación de resultados orientada al problema
 
+El análisis de las tendencias mensuales permite identificar los meses de mayor y menor rendimiento, lo que ayuda a comprender el comportamiento del negocio y orientar decisiones estratégicas.
+
 
 ### Análisis de la tendencia mensual de la cantidad vendida y los ingresos (importe)
+
 Primer trimestre (enero–marzo): 
 
   - Se observa una tendencia de descenso constante tanto en la cantidad vendida como en los ingresos generados.
