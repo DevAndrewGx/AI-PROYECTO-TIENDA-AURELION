@@ -25,7 +25,6 @@ Organizar y estandarizar toda la información de la tienda en una estructura má
     - Marcio Mallqui
     - Andrey Gomez
     - Karen Martin
-    - 8
 
 ---
 # Base de datos
@@ -53,61 +52,61 @@ Organizar y estandarizar toda la información de la tienda en una estructura má
 
 | Columnas | Tipos de datos | Escala     |
 | :--- | :---: | ---: |
-| Id_categoría | Cualitativo | Nominal |
+| Id_categoría | Cuantitativo | Razón |
 | categoría | Cualitativo | Nominal |
 
 - Ciudad
 
 | Columnas | Tipos de datos | Escala     |
 | :--- | :---: | ---: |
-| Id_ciudad | Cualitativo | Nominal |
+| Id_ciudad | Cuantitativo | Razón |
 | ciudad | Cualitativo | Nominal |
 
 - Clientes
 
 | Columnas | Tipos de datos | Escala     |
 | :--- | :---: | ---: |
-| Id_cliente | Cualitativo | Nominal |
+| Id_cliente | Cuantitativo | Razón |
 | nombre_cliente | Cualitativo | Nominal |
 | Email | Cualitativo | Nominal |
 | Fecha_alta | Fecha | Intervalo |
-| id_ciudad | Cualitativo | Nominal |
+| id_ciudad | Cuantitativo | Razón |
 
 - Producto
   
 | Columnas | Tipos de datos | Escala     |
 | :--- | :---: | ---: |
-| Id_producto | Cualitativo | Nominal |
+| Id_producto | Cuantitativo | Razón |
 | nombre_producto | Cualitativo | Nominal |
 | precio_unitario | Cuantitativo | Razón |
-| Id_categoria | Cualitativo | Nominal |
+| Id_categoria | Cuantitativo | Razón |
 
 - Medio de Pago
 
 | Columnas | Tipos de datos | Escala     |
 | :--- | :---: | ---: |
-| Id_medio_pago | Cualitativo | Nominal |
+| Id_medio_pago | Cuantitativo | Razón |
 | medio_pago | Cualitativo | Nominal |
 
 - Venta
 
 | Columnas | Tipos de datos | Escala     |
 | :--- | :---: | ---: |
-| Id_venta | Cualitativo | Nominal |
+| Id_venta | Cuantitativo | Razón |
 | Fecha | Fecha | Intervalo |
-| Id_cliente | Cualitativo | Nominal |
-| Id_medio_pago | Cualitativo | Nominal |
+| Id_cliente | Cuantitativo | Razón |
+| Id_medio_pago | Cuantitativo | Razón |
 
 - Detalle Ventas
 
 | Columnas | Tipos de datos | Escala     |
 | :--- | :---: | ---: |
-| Id_venta | Cualitativo | Nominal |
-| Id_producto | Cualitativo | Nominal |
+| Id_venta | Cuantitativo | Razón |
+| Id_producto | Cuantitativo | Razón |
 | Cantidad | Cuantitativo | Razón |
 | Importe | Cuantitativo | Razón |
 
-![alt text](./Images/image.png)
+
 ### Clave primaria (Primary Key - PK): Campos que garantizan la unicidad de cada registro
     
     id_categoria, id_ciudad, id_cliente, id_venta, id_producto, id_medio_pago
