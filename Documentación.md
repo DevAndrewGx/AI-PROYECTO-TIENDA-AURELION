@@ -1,5 +1,6 @@
 # Proyecto - Tienda Aurelion
 ---
+---
 # Tema
 
 Administrar y organizar a los clientes, productos y ventas de la Tienda Aurelion. 
@@ -121,8 +122,6 @@ Organizar y estandarizar toda la información de la tienda en una estructura má
 - Un detalle de venta corresponde a un producto (`detalle_ventas.id_producto → productos.id_producto`).
 
 
----
-
 # Programa en Python que consultará la documentación.
 
 ## Información:
@@ -172,21 +171,21 @@ Organizar y estandarizar toda la información de la tienda en una estructura má
 
 - 15 preguntas acerca de 
 
-1. Que tipo de información se repite con mayor frecuencia entre los datos en los archivos o hoja de Excel?
-2. ¿Cuál es el principal problema que el proyecto busca solucionar para la Tienda Aurelion?
-3. ¿Cuáles son los 10 productos más vendidos en cantidad?
-4. ¿Qué 10 productos generan más ingresos?
-5. ¿Quiénes son los 20 clientes que más compran en términos de ingresos?
-6. Como se espera que con la nueva organización o gestión de la información el tiempo de busqueda mejore?
-7. ¿Cuál es la compra media por cliente?
-8. ¿Cuántos pedidos totales se han realizado?
-9. ¿Cuál es el valor promedio por pedido?
-10. Que campos o columnas se consideran esenciales en la BD?
-11. ¿Cómo modificar la estructura actual para identificar a los "clientes VIP" (los que compran con más frecuencia) y ofrecerles descuentos especiales?
-12. Cual es el metodo de pago que mas se utiliza ? 
-13. Cual es el barrio o ciudad que tiene mas ventas ?
-14. ¿Cuál es el ingreso total generado por el negocio?
-15. ¿Cómo ha sido la tendencia de ingresos mensuales?
+1. ¿Cuáles son los 10 productos más vendidos en cantidad?
+2. ¿Cuáles son los 10 productos que generan más ingresos?
+3. ¿Quiénes son los 20 clientes que más compran en términos de ingresos?
+4. ¿Cuál es la compra media por cliente mensualmente?
+5. ¿Cuántos pedidos totales se han realizado?
+6. ¿Cuál es el valor promedio por pedido mensualmente?
+7. ¿Cuál es el método de pago que más se utiliza?
+8. ¿En qué ciudades generan más ingresos?
+9. ¿En qué ciudades se realizaron más compras en cantidad?
+10. ¿Cuál es el ingreso total generado?
+11. ¿Cómo ha sido la tendencia de ingresos?
+12. ¿Cuál es la cantidad total vendida?
+13. ¿Cómo ha sido la tendencia de la cantidad vendida?
+14. ¿Cuáles son las categorías más vendidas en cantidad?
+15. ¿Qué categorías generan más ingresos?
 
 ---
 
@@ -316,3 +315,71 @@ Primer trimestre (enero–marzo):
 - En mayo, el gasto promedio por cliente alcanzó su máximo valor (30359.82 ARS). Aunque no fue el mes con mayor cantidad vendida, este resultado sugiere que los clientes realizaron compras de mayor valor unitario, elevando así el ingreso total.
 
 - En junio, el gasto promedio por cliente fue de 26133.17 ARS, manteniéndose en un nivel alto respecto a los meses anteriores, aunque con una ligera disminución respecto a mayo.
+
+
+# Implementación de Machine Learning 
+
+## Objetivo
+
+El obejtivo es predecir el importe utilizando las variables cantidad y precio unitario.
+
+¿En qué ayuda esto?
+
+1. Planificación de ingresos y promociones
+
+Permite estimar cuánto facturará la tienda si:
+
+* Se aumenta o disminuye el precio de un producto.
+* Se incrementa la cantidad comprada por los clientes.
+
+Esto ayuda a diseñar promociones más efectivas y prever el impacto financiero antes de aplicarlas.
+
+2. Mejora de la estrategia de precios (Pricing)
+
+Esto permite optimizar el margen de ganancia de cada producto.
+
+3. Evaluar combinaciones de productos
+
+Permite analizar si vender dos o más productos como un combo:
+
+* Aumenta la cantidad total vendida.
+* Eleva o reduce el importe total.
+
+Así, la tienda puede identificar combinaciones rentables y fortalecer su estrategia de ventas.
+
+## Algoritmo elegido
+
+Se utilizará  el **algoritmo Regresión Lineal Múltiple**.
+
+#### Justificación:
+
+* La variable objetivo importe es numérica y continua.
+
+* Las variables independientes cantidad y precio_unitario muestran relaciones aproximadamente lineales con el importe.
+
+* La variable objetivo importe es numérica y continua.
+* La variables independientes cantidad y precio unitario muestran relaciones aproximadamente líneales.
+  ¿Por qué?
+     * En los gráficos de dispersión se observa que la relación entre precio_unitario e importe forma líneas inclinadas, lo que indica proporcionalidad.
+     * La relación entre cantidad e importe presenta líneas rectas casi perfectas, porque el importe es directamente proporcional a la cantidad.
+     * Es un modelo simple, eficiente e interpretable.
+
+![alt text](./Images/image-16.png)
+![alt text](./Images/image-17.png)
+
+### Paquetes
+![alt text](./Images/image-18.png)
+### Entradas (X) y salida (y)
+![alt text](./Images/image-19.png)
+### División train/test
+![alt text](./Images/image-20.png)
+### Modelo ML implementado
+![alt text](./Images/image-21.png)
+### Entrena el modelo
+![alt text](./Images/image-22.png)
+### Métricas de evaluación
+![alt text](./Images/image-23.png)
+### Predicciones y calcula métricas básica
+![alt text](./Images/image-24.png)
+### Gráfico
+![alt text](./Images/image-25.png)
