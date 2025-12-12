@@ -316,3 +316,54 @@ Primer trimestre (enero–marzo):
 - En mayo, el gasto promedio por cliente alcanzó su máximo valor (30359.82 ARS). Aunque no fue el mes con mayor cantidad vendida, este resultado sugiere que los clientes realizaron compras de mayor valor unitario, elevando así el ingreso total.
 
 - En junio, el gasto promedio por cliente fue de 26133.17 ARS, manteniéndose en un nivel alto respecto a los meses anteriores, aunque con una ligera disminución respecto a mayo.
+
+--- 
+# Algoritmo de machine learning - Sprint 3
+
+## Objetivo
+
+El obejtivo es predecir el importe utilizando las variables cantidad y precio unitario.
+
+¿En qué ayuda esto?
+
+1. Planificación de ingresos y promociones
+
+Permite estimar cuánto facturará la tienda si:
+
+* Se aumenta o disminuye el precio de un producto.
+* Se incrementa la cantidad comprada por los clientes.
+
+Esto ayuda a diseñar promociones más efectivas y prever el impacto financiero antes de aplicarlas.
+
+2. Mejora de la estrategia de precios (Pricing)
+
+Esto permite optimizar el margen de ganancia de cada producto.
+
+3. Evaluar combinaciones de productos
+
+Permite analizar si vender dos o más productos como un combo:
+
+* Aumenta la cantidad total vendida.
+* Eleva o reduce el importe total.
+
+Así, la tienda puede identificar combinaciones rentables y fortalecer su estrategia de ventas.
+
+## Algoritmo Elegido y Justificación
+
+
+Se utilizará  el **algoritmo Regresión Lineal Múltiple**.
+
+### Justificación:
+
+* La variable objetivo importe es numérica y continua.
+
+* Las variables independientes cantidad y precio_unitario muestran relaciones aproximadamente lineales con el importe.
+
+* La variable objetivo importe es numérica y continua.
+* La variables independientes cantidad y precio unitario muestran relaciones aproximadamente líneales.
+
+  ¿Por qué?
+     * En los gráficos de dispersión se observa que la relación entre precio_unitario e importe forma líneas inclinadas, lo que indica proporcionalidad.
+     * La relación entre cantidad e importe presenta líneas rectas casi perfectas, porque el importe es directamente proporcional a la cantidad.
+     * Es un modelo simple, eficiente e interpretable.
+
