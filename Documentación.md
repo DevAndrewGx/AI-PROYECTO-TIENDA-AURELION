@@ -316,15 +316,10 @@ Primer trimestre (enero–marzo):
 
 - En junio, el gasto promedio por cliente fue de 26133.17 ARS, manteniéndose en un nivel alto respecto a los meses anteriores, aunque con una ligera disminución respecto a mayo.
 
-<<<<<<< HEAD
---- 
-# Algoritmo de machine learning - Sprint 3
-=======
 
 # Implementación de Machine Learning 
->>>>>>> aecd295406640297603e7c17f4eb4e148c756702
 
-## Objetivo
+# Objetivo
 
 El obejtivo es predecir el importe utilizando las variables cantidad y precio unitario.
 
@@ -352,20 +347,12 @@ Permite analizar si vender dos o más productos como un combo:
 
 Así, la tienda puede identificar combinaciones rentables y fortalecer su estrategia de ventas.
 
-<<<<<<< HEAD
-## Algoritmo Elegido y Justificación
+# Algoritmo Elegido y Justificación
 
 
 Se utilizará  el **algoritmo Regresión Lineal Múltiple**.
 
 ### Justificación:
-=======
-## Algoritmo elegido
-
-Se utilizará  el **algoritmo Regresión Lineal Múltiple**.
-
-#### Justificación:
->>>>>>> aecd295406640297603e7c17f4eb4e148c756702
 
 * La variable objetivo importe es numérica y continua.
 
@@ -373,34 +360,27 @@ Se utilizará  el **algoritmo Regresión Lineal Múltiple**.
 
 * La variable objetivo importe es numérica y continua.
 * La variables independientes cantidad y precio unitario muestran relaciones aproximadamente líneales.
-<<<<<<< HEAD
-
-=======
->>>>>>> aecd295406640297603e7c17f4eb4e148c756702
   ¿Por qué?
      * En los gráficos de dispersión se observa que la relación entre precio_unitario e importe forma líneas inclinadas, lo que indica proporcionalidad.
      * La relación entre cantidad e importe presenta líneas rectas casi perfectas, porque el importe es directamente proporcional a la cantidad.
      * Es un modelo simple, eficiente e interpretable.
 
-<<<<<<< HEAD
-=======
 ![alt text](./Images/image-16.png)
 ![alt text](./Images/image-17.png)
 
-### Paquetes
+## Paquetes
 ![alt text](./Images/image-18.png)
-### Entradas (X) y salida (y)
+# Entradas (X) y salida (y)
 ![alt text](./Images/image-19.png)
-### División train/test
+# División train/test
 ![alt text](./Images/image-20.png)
-### Modelo ML implementado
+# Modelo ML implementado
 ![alt text](./Images/image-21.png)
-### Entrena el modelo
+# Entrena el modelo
 ![alt text](./Images/image-22.png)
-### Métricas de evaluación
+# Métricas de evaluación
 ![alt text](./Images/image-23.png)
-### Predicciones y calcula métricas básica
+# Predicciones y calcula métricas básica
 ![alt text](./Images/image-24.png)
-### Gráfico
+# Gráfico
 ![alt text](./Images/image-25.png)
->>>>>>> aecd295406640297603e7c17f4eb4e148c756702
