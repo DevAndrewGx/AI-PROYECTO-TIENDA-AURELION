@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# SQL Server Management Studio Version 21
+VisualStudioVersion = 17.14.36408.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "Proyecto_Aurelion", "Proyecto_Aurelion.ssmssqlproj", "{40F43FCC-042A-3A82-EF93-13967BE81B6C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|Default = Default|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{40F43FCC-042A-3A82-EF93-13967BE81B6C}.Default|Default.ActiveCfg = Default
+		{3527A07F-6772-4671-9140-E6723DCA3A09}.Default|Default.ActiveCfg = Default
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {51D149C3-AF17-492F-A520-A132A55DDCE0}
+	EndGlobalSection
+EndGlobal
